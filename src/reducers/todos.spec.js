@@ -20,6 +20,9 @@ test(todos, () => {
   .assert('should set completed:false on the added todo', (state) => {
     expect(state[0].completed).toEqual(false)
   })
+  .assert('should add only one todo', (state) => {
+    expect(state.length).toEqual(1)
+  })
 
   given([
     {
@@ -35,6 +38,9 @@ test(todos, () => {
   .describe('when state has an existing todo and another todo is added')
   .assert('should add the todo after the existing todo', (state) => {
     expect(state[1].id).toEqual(1)
+  })
+  .assert('should add only one todo', (state) => {
+    expect(state.length).toEqual(2)
   })
 
   given([
@@ -57,6 +63,21 @@ test(todos, () => {
   })
   .assert('should not toggle any other todos', (state) => {
     expect(state[1].completed).toEqual(false)
+  })
+
+  given([
+    {
+      text: 'Run the tests',
+      completed: true,
+      id: 1
+    }
+  ], {
+    type: 'TOGGLE_TODO',
+    id: 1
+  })
+  .describe('when a todo with completed:true is toggled')
+  .assert('should set complete:false on the toggled todo', (state) => {
+    expect(state[0].completed).toEqual(false)
   })
 
 })
