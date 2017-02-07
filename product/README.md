@@ -1,8 +1,6 @@
-# todos
+# enzyme
 
-This project demonstrates use of [Sazerac](http://github.com/mikec/sazerac) with a [Redux](http://redux.js.org/) app.
-
-It's a copy of Redux's [Example: Todo List](http://redux.js.org/docs/basics/ExampleTodoList.html) with the tests refactored. The [original project can be found here](https://github.com/reactjs/redux/tree/d91ed56a9b75a1ab58684db49cd36a7fc0afefea/examples/todos)
+This project demonstrates use of [Sazerac](http://github.com/mikec/sazerac) with [Enzyme](http://airbnb.io/enzyme/).
 
 ## Available Scripts
 
