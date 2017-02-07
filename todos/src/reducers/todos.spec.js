@@ -10,6 +10,19 @@ test(todos, () => {
     text: 'Run the tests',
     id: 0
   })
+  .expect([
+    {
+      text: 'Run the tests',
+      id: 0,
+      completed: false
+    }
+  ])
+
+  given([], {
+    type: 'ADD_TODO',
+    text: 'Run the tests',
+    id: 0
+  })
   .describe('when state is empty and a todo is added')
   .assert('should add the todo and set `id` property', (state) => {
     expect(state[0].id).toEqual(0)
