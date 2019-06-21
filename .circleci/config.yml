@@ -7,8 +7,8 @@ jobs:
     working_directory: ~/repo/todos
 
     steps:
-      - checkout
-        path: ~/repo
+      - checkout:
+          path: ~/repo
 
       - run:
           name: Install dependencies
@@ -30,8 +30,8 @@ jobs:
     working_directory: ~/repo/product
 
     steps:
-      - checkout
-        path: ~/repo
+      - checkout:
+          path: ~/repo
 
       - run:
           name: Install dependencies
