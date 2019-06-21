@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "devDependencies": {
     "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "prettier": "^1.18.2",
     "react-addons-test-utils": "^15.3.0",
     "react-scripts": "^3.0.1",
@@ -10,8 +11,8 @@
   },
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2"
   },
