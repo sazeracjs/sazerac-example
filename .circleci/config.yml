@@ -35,7 +35,7 @@ jobs:
 
       - run:
           name: Install dependencies
-          command: yarn
+          command: npm ci
 
       - run:
           name: Run tests
