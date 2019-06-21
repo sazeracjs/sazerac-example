@@ -41,10 +41,10 @@ jobs:
           name: Run tests
           command: npm test
 
-      # - run:
-      #     name: Check prettier
-      #     command: npm run prettier:check
-      #     when: always
+      - run:
+          name: Check prettier
+          command: npm run prettier:check
+          when: always
 
 workflows:
   version: 2
