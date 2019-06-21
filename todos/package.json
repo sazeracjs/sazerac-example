@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "devDependencies": {
     "enzyme": "^2.4.1",
+    "prettier": "^1.18.2",
     "react-addons-test-utils": "^15.3.0",
     "react-scripts": "^3.0.1",
     "sazerac": "^1.0.0"
@@ -17,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "prettier": "prettier --write \"**/*.@(js|md|yml|json)\"",
+    "prettier:check": "prettier --check \"**/*.@(js|md|yml|json)\""
   },
   "browserslist": {
     "production": [

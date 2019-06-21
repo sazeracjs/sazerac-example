@@ -1,0 +1,55 @@
+version: 2
+jobs:
+  todos:
+    docker:
+      - image: circleci/node:10
+
+    working_directory: ~/repo/todos
+
+    steps:
+      - checkout:
+          path: ~/repo
+
+      - run:
+          name: Install dependencies
+          command: npm ci
+
+      - run:
+          name: Run tests
+          command: npm test
+
+      - run:
+          name: Check prettier
+          command: npm run prettier:check
+          when: always
+
+  product:
+    docker:
+      - image: circleci/node:10
+
+    working_directory: ~/repo/product
+
+    steps:
+      - checkout:
+          path: ~/repo
+
+      - run:
+          name: Install dependencies
+          command: yarn
+
+      - run:
+          name: Run tests
+          command: npm test
+
+      # - run:
+      #     name: Check prettier
+      #     command: npm run prettier:check
+      #     when: always
+
+workflows:
+  version: 2
+
+  on-commit:
+    jobs:
+      - todos
+      - product
