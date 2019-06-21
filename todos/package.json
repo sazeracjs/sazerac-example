@@ -2,7 +2,6 @@
   "name": "sazerac-example",
   "version": "0.0.1",
   "devDependencies": {
-    "enzyme": "^2.4.1",
     "prettier": "^1.18.2",
     "react-addons-test-utils": "^15.3.0",
     "react-scripts": "^3.0.1",
