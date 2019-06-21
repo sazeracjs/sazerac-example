@@ -9,6 +9,7 @@
     "sazerac": "^1.0.0"
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
