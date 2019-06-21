@@ -18,16 +18,16 @@ jobs:
           name: Run tests
           command: npm test
 
-      # - run:
-      #     name: Check prettier
-      #     command: npm run prettier:check
-      #     when: always
+      - run:
+          name: Check prettier
+          command: npm run prettier:check
+          when: always
 
   product:
     docker:
       - image: circleci/node:10
 
-    working_directory: ~/repo/todos
+    working_directory: ~/repo/product
 
     steps:
       - checkout
