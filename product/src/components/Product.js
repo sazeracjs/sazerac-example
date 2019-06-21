@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react'
 
 const Product = ({ product }) => {
-
   const { title, price, inventory } = product
 
   let err = false
@@ -9,13 +8,15 @@ const Product = ({ product }) => {
     err = true
   }
 
-  const message = err ? 
-          <div className='error-msg'>Please enter all product info</div> :
-          <div className='success-msg'>Sweet!</div>
+  const message = err ? (
+    <div className="error-msg">Please enter all product info</div>
+  ) : (
+    <div className="success-msg">Sweet!</div>
+  )
 
   return (
     <div className={'product' + (err ? ' error' : '')}>
-      <div className='product-info'>
+      <div className="product-info">
         <div>Title: {title}</div>
         <div>Price: {price}</div>
         <div>Inventory: {inventory}</div>
@@ -23,14 +24,13 @@ const Product = ({ product }) => {
       {message}
     </div>
   )
-
 }
 
 Product.propTypes = {
   product: PropTypes.shape({
     title: PropTypes.string,
     price: PropTypes.string,
-    inventory: PropTypes.string
-  })
+    inventory: PropTypes.string,
+  }),
 }
 export default Product
