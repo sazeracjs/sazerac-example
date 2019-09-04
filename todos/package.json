@@ -4,7 +4,7 @@
   "devDependencies": {
     "prettier": "^1.18.2",
     "react-addons-test-utils": "^15.3.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^3.1.1",
     "sazerac": "^1.1.0"
   },
   "dependencies": {
