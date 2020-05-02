@@ -9,4 +9,4 @@ Deployed sites:
 
 [sazerac]: https://sazerac.js.org/
 [product]: https://sazerac-example-product.netlify.app/
-[todos]: https://sazerac-example-product.netlify.app/
+[todos]: https://sazerac-example-todos.netlify.app/
